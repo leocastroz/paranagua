@@ -1,10 +1,10 @@
 <template>
   <div class="top-bar">
-    <div class="logo-title">
-      <img src="../assets/imgs/Tulip.svg" alt="" width="60">
+    <div class="logo-title animate__animated animate__fadeIn">
+      <img src="../assets/imgs/logo.png" alt="" width="60">
       <p>Floricultura Casa Das Flores</p>
     </div>
-    <div class="desc-data">
+    <div class="desc-data animate__animated animate__fadeIn">
       <p>Frete grátis para regiões próximas de Curitiba</p>
       <button>Conferir agora</button>
     </div>
@@ -20,34 +20,34 @@
 .top-bar {
   display: flex;
   justify-content: space-between;
-  background-color: #C47029;
+  background-color: #7eff94;
+  background-image: linear-gradient(180deg, #7eff94 0%, #2eaa42 100%);
   padding: 20px;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #ffc296;
+  color: #13501d;
   align-items: center;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 button {
-  background-color: #ffc296;
-  color: #C47029;
+  background-color: #478a52;
+  color: #eefff1;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: normal;
   border: none;
-  box-shadow: 0 5px 5px 0 #904f1b;
+  box-shadow: 0 5px 5px 0 #23622d;
   margin: 0 20px;
   transition: ease 0.3s;
   cursor: pointer;
 }
 button:hover {
-  background-color: #904f1b;
-  color: #ffc296;
-  box-shadow: 0 5px 5px 0 #c47029;
+  background-color: #eefff1;
+  color: #000;
+  box-shadow: 0 5px 5px 0 #23622d;
 }
 
 </style>
