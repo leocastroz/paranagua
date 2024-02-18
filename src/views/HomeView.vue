@@ -1,25 +1,3 @@
-<!-- <script setup>
-import { ref } from 'vue';
-import items from '../data.js';
-
-const itemsRef = ref(items);
-</script>
-
-<template>
-  <main class="animate__animated animate__fadeIn"></main>
-  <div class="text-h1">
-    <h1 class="animate__animated animate__fadeInDown">Conheça Nossos Produtos</h1>
-  </div>
-  <div class="before">
-    <div class="container">
-      <div class="item animate__animated animate__fadeInLeft" v-for="(item, index) in itemsRef" :key="index">
-        <img :src="item.img" alt="img">
-        <a :href="item.message">Comprar agora!</a>
-      </div>
-    </div>
-  </div>
-</template> -->
-
 <script setup>
 import { ref } from 'vue';
 import items from '../data.js';
@@ -39,7 +17,10 @@ const increaseCount = () => displayCount.value += 12;
       <div class="item animate__animated animate__fadeInLeft" v-for="(item, index) in itemsRef" :key="index">
         <template v-if="index < displayCount">
           <img :src="item.img" alt="img">
-          <a :href="item.message" target="_blank">Comprar agora!</a>
+          <div class="comprar">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Fmedium%2Fpurepng.com-shopping-cartshoppingcarttrolleycarriagebuggysupermarkets-1421526532379mew9h.png&f=1&nofb=1&ipt=7f52d469106aac5a2d85adeda56bfa7695752187ea3afc85853316b724905c7f&ipo=images" alt="car">
+            <a :href="item.message" target="_blank">Comprar agora!</a>
+          </div>
         </template>
         <template v-else-if="index === displayCount">
           <button @click="increaseCount">Ver mais</button>
@@ -98,14 +79,39 @@ h1 {
     text-align: center;
     box-sizing: border-box;
     width: 250px;
-    border-radius: 5px;
+    border-radius: 8px 8px 0 0;
 }
 
 .item img {
   width: 250px;
   height: 250px;
-  border-radius: 5px;
+  border-radius: 8px 8px 0 0;
   box-shadow: 2px 45px 20px 2px #b1b1b1;
+}
+
+.item .comprar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7eff94;
+  background-image: linear-gradient(180deg, #7eff94 0%, #2eaa42 100%);
+  border-radius: 3px;
+  font-weight: bold;
+  transition: ease 0.3s;
+}
+
+.item .comprar a {
+  padding: 8px;
+  margin: 0 1px;
+  font-size: 13px;
+  color: #13501d;
+  text-decoration: none;
+}
+
+.item .comprar img {
+  width: 20px;
+  height: 20px;
+  box-shadow: none;
 }
 
 .item a {

@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import SideFooter from './components/SideFooter.vue'
 </script>
 
 <template>
@@ -13,10 +14,12 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/flores">Flores</RouterLink>
         <RouterLink to="/sementes">Sementes</RouterLink>
         <RouterLink to="/vasos">Vasos</RouterLink>
+        <RouterLink to="/pelucias">Pelúcias</RouterLink>
       </nav>
     </div>
   </header>
   <RouterView />
+  <SideFooter />
 </template>
 
 <style scoped>
@@ -29,7 +32,7 @@ nav {
 nav a {
   text-decoration: none;
   margin: 15px;
-  color: #835530;
+  color: #13501d;
   font-size: 13px;
   text-transform: uppercase;
   transition: ease-out 0.3s;

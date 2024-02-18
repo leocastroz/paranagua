@@ -17,6 +17,19 @@
   display: flex;
   align-items: center;
 }
+
+.logo-title img {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 100%;
+  background-color: #282828;
+}
+.logo-title p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #13501d;
+}
+
 .top-bar {
   display: flex;
   justify-content: space-between;
