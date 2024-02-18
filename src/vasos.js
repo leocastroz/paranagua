@@ -2,15 +2,18 @@
 export default [
   {
     "img": './src/assets/imgs/produts/1.jpg',
+    "imgStar": 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpluspng.com%2Fimg-png%2Fstar-png-star-vector-png-transparent-image-2000.png&f=1&nofb=1&ipt=88e0a6359335d87dbde5076508513169f00e92355d647efa5a453738c9d3335e&ipo=images',
     "title": "Produto 1",
     "message": 'https://api.whatsapp.com/send?phone=+5594991511806&text=Olá Borba! Estou com algumas dúvidas.'
   },
   {
     "img": './src/assets/imgs/produts/2.jpg',
+    "imgStar": 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpluspng.com%2Fimg-png%2Fstar-png-star-vector-png-transparent-image-2000.png&f=1&nofb=1&ipt=88e0a6359335d87dbde5076508513169f00e92355d647efa5a453738c9d3335e&ipo=images',
     "message": 'https://api.whatsapp.com/send?phone=+5594991511806&text=Olá Borba! Estou com algumas dúvidas.'
   },
   {
     "img": './src/assets/imgs/produts/3.jpg',
+    "imgStar": 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpluspng.com%2Fimg-png%2Fstar-png-star-vector-png-transparent-image-2000.png&f=1&nofb=1&ipt=88e0a6359335d87dbde5076508513169f00e92355d647efa5a453738c9d3335e&ipo=images',
     "message": 'https://api.whatsapp.com/send?phone=+5594991511806&text=Olá Borba! Estou com algumas dúvidas.'
   },{
     "img": './src/assets/imgs/produts/4.jpg',
