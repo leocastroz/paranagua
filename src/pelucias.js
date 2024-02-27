@@ -1,7 +1,7 @@
 // data.js
 export default [
   {
-    "img": '/assets/1.jpg',
+    "img": 'https://raw.githubusercontent.com/leocastroz/paranagua/main/src/assets/imgs/produts/1.jpg',
     "title": "Produto 1",
     "message": 'https://api.whatsapp.com/send?phone=+5541984559417&text=Olá Casa das Flores Paranagua! Gostaria de comprar este item.'
   },
