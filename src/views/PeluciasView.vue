@@ -25,7 +25,7 @@ const increaseCount = () => displayCount.value += 12;
         </template>
         <template v-else-if="index === displayCount">
           <div class="loading">
-            <button @click="increaseCount">Ver mais</button>
+            <!-- <button @click="increaseCount">Ver mais</button> -->
           </div>
         </template>
       </div>

@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { Toaster, toast } from "@steveyuowo/vue-hot-toast";
+import "@steveyuowo/vue-hot-toast/vue-hot-toast.css";
+</script>
 <template>
   <footer>
    <div class="footer">
@@ -10,13 +14,37 @@
         <p>Email:</p>
       </div>
    </div>
+   <!-- <button
+    @click="
+      toast.success('Execution Success!');
+    "
+  >
+    Success
+  </button>
+  <button
+    @click="
+      toast.loading('Loading...');
+    "
+  >
+    Loading
+  </button>
+  <button
+    @click="
+      toast.error('Execution Error!');
+    "
+  >
+    Error
+  </button> -->
+  <Toaster />
     <div class="wrapper">
-      <p>© 2024. Todos os direitos reservados à Suelen Correa. Desenvolvido por <a href="https://api.whatsapp.com/send?phone=+5541  99658-8892&text=Olá Kelvin! Gostaria de fazer um site com você!!." target="_blank">Kelvin Tecnologia</a>.</p>
+      <p>© 2024. Todos os direitos reservados à Casa Das Flores Paranagua. Desenvolvido por <a href="https://api.whatsapp.com/send?phone=+5541  99658-8892&text=Olá Kelvin! Gostaria de fazer um site com você!!." target="_blank">Kelvin Tecnologia</a>.</p>
     </div>
   </footer>
 </template>
 
 <style scoped>
+
+
 footer {
   color: aliceblue;
 }
