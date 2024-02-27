@@ -6,7 +6,7 @@ import { ref } from 'vue';
 const pelucias = [
   // data.js
   {
-    "img": './src/assets/imgs/produts/14.jpg',
+    "img": 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fthewowstyle.com%2Fwp-content%2Fuploads%2F2015%2F01%2Fnature-wallpaper-27.jpg&f=1&nofb=1&ipt=8926798ad8522c966ad9c4e738e06865866ac79722268249b26eed15c70daf8e&ipo=images',
     "title": "Produto 1",
     "message": 'https://api.whatsapp.com/send?phone=+5541984559417&text=Olá Casa das Flores Paranagua! Gostaria de comprar este item.'
   },
