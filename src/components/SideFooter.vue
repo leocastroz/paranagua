@@ -1,20 +1,45 @@
 <script setup lang="ts">
 import { Toaster, toast } from "@steveyuowo/vue-hot-toast";
 import "@steveyuowo/vue-hot-toast/vue-hot-toast.css";
+
+import { ref, onMounted } from 'vue';
+
+const status = ref('');
+
+onMounted(checkStatus);
+setInterval(checkStatus, 60000); // Check status every minute
+
+function checkStatus() {
+  const now = new Date();
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  // Convert to 24 hour format
+  const time = hours * 100 + minutes;
+  // Check if current time is between 8:00 AM (0800) and 6:10 PM (1810)
+  if (time >= 800 && time <= 1810) {
+    status.value = '🟢 aberto';
+  } else {
+    status.value = '🔴 fechado';
+  }
+}
 </script>
 <template>
   <footer>
-   <div class="footer">
+    <div class="footer">
       <div>
         <img src="../assets/imgs/logo.png" alt="logo-site" width="100">
+        <p>48.088.293/0001-37</p>
+        <p>⚲ Paranaguá - Parana, Brasil</p>
+        <p>{{ status }}</p>
       </div>
       <div>
         <h2>Contato</h2>
-        <p>Telefone: (41) 99658-8892</p>
-        <p>Email:</p>
+        <p>WhasApp: (41) 93422-7934</p>
+        <p>WhasApp: (41) 98455-9417</p>
+        <a href="https://www.instagram.com/casadasfloresparanagua/" target="_blank">instagram</a>
       </div>
-   </div>
-   <!-- <button
+    </div>
+    <!-- <button
     @click="
       toast.success('Execution Success!');
     "
@@ -35,16 +60,17 @@ import "@steveyuowo/vue-hot-toast/vue-hot-toast.css";
   >
     Error
   </button> -->
-  <Toaster />
+    <Toaster />
     <div class="wrapper">
-      <p>© 2024. Todos os direitos reservados à Casa Das Flores Paranagua. Desenvolvido por <a href="https://api.whatsapp.com/send?phone=+5541  99658-8892&text=Olá Kelvin! Gostaria de fazer um site com você!!." target="_blank">Kelvin Tecnologia</a>.</p>
+      <p>© 2024. Todos os direitos reservados à Casa Das Flores Paranagua. Desenvolvido por <a
+          href="https://api.whatsapp.com/send?phone=+5541  99658-8892&text=Olá Kelvin! Gostaria de fazer um site com você!!."
+          target="_blank">Kelvin Tecnologia</a>.
+      </p>
     </div>
   </footer>
 </template>
 
 <style scoped>
-
-
 footer {
   color: aliceblue;
 }
@@ -52,12 +78,31 @@ footer {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 10px 50px;
-  background-color: #1b1b1b;
+  align-items: center;
+  padding: 50px 50px;
+  background-image: url('../assets/imgs/background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.footer p {
+  font-size: 12px;
+  padding: 4px 0;
+  color: #cacaca;
+}
+
+.footer a {
+  background-color: deeppink;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .wrapper {
-  background-color: #1b1b1b;
+  background-color: #121212;
   font-size: 12px;
   padding: 5px;
   text-align: center;

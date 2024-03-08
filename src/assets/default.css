@@ -1,61 +1,105 @@
-main {
+.home {
   background-image: url('https://images.pexels.com/photos/793012/pexels-photo-793012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-size: cover;
   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center center;
-   background-color: rgb(197, 197, 197);
-   height: 350px;
- }
- 
- .text-h1 {
-   text-align: center;
-   max-width: 400px;
-   margin: 30px auto 0 auto;
- }
- 
- h1 {
-   text-transform: uppercase;
-   background: -webkit-linear-gradient(#5c5c5c,#2eaa42);
-   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
-   font-weight: 700;
- }
- 
- .container {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   padding: 0 50px;
- }
- 
- .before {
-   max-width: 1300px;
-   margin: 0 auto;
- }
- 
- .item {
-     width: calc(33.33% - 20px);
-     margin: 20px;
-     color: #13501d;
-     display: grid;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-     box-sizing: border-box;
-     width: 250px;
-     border-radius: 8px 8px 0 0;
- }
- 
- .item img {
-   width: 250px;
-   height: 250px;
-   border-radius: 8px 8px 0 0;
-   box-shadow: 2px 45px 20px 2px #b1b1b1;
- }
+  background-attachment: fixed;
+  background-position: center center;
+  height: 350px;
+}
 
- .item .star {
+.pelucias {
+  background-image: url('https://i0.wp.com/jornalaw.com.br/wp-content/uploads/2023/04/bichinhos-de-pelucia-como-lavar.webp?fit=924%2C616&ssl=1');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 350px;
+}
+
+.sementes {
+  background-image: url('https://allianceofhope.org/wp-content/uploads/2021/01/AdobeStock_246697517-Cropped-to-GR-scaled.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 350px;
+}
+
+.vasos {
+  background-image: url('https://images.pexels.com/photos/793012/pexels-photo-793012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 350px;
+}
+
+.decoracoes {
+  background-image: url('https://4.bp.blogspot.com/-89eE3pBIxP8/T48DG3G1h3I/AAAAAAAAACk/SErOBhLAyGc/s1600/IMG_0160.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 350px;
+}
+
+.flores {
+  background-image: url('https://th.bing.com/th/id/R.0ae2302f837aa5c8278c76bf5288d542?rik=q1I3vel3VdBqpg&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f02%2f18%2f294054-flowers.jpg&ehk=X1JhjuCF%2bCEK949Da3rHqx6Oq3v7iCUpX4%2f8IiNM30E%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 350px;
+}
+
+.text-h1 {
+  text-align: center;
+  max-width: 400px;
+  margin: 30px auto 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#5c5c5c, #2eaa42);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+.before {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.item {
+  width: calc(33.33% - 20px);
+  margin: 20px;
+  color: #13501d;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  width: 250px;
+  border-radius: 8px 8px 0 0;
+}
+
+.item img {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 2px 45px 20px 2px #b1b1b1;
+}
+
+.item .star {
   position: absolute;
   top: 0px;
   right: 0;
@@ -65,57 +109,56 @@ main {
   padding: 8px;
   background-color: rgb(37, 37, 37);
 }
- 
- .item .comprar {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-color: #7eff94;
-   background-image: linear-gradient(180deg, #7eff94 0%, #2eaa42 100%);
-   border-radius: 3px;
-   font-weight: bold;
-   transition: ease 0.3s;
-   cursor: pointer;
- }
- 
- .item .comprar:hover {
-   background-color: #ffffff;
-   background-image: linear-gradient(180deg, #fff 0%, #fff 100%);
- }
- 
- .item .comprar a {
-   padding: 12px;
-   margin: 0 1px;
-   font-size: 13px;
-   color: #13501d;
-   text-decoration: none;
- }
- 
- .item .comprar img {
-   width: 20px;
-   height: 20px;
-   box-shadow: none;
- }
- 
- .item a {
-   text-decoration: none;
-   border-radius: 3px;
-   padding: 8px;
-   font-size: 13px;
-   color: #13501d;
-   font-weight: bold;
-   transition: ease 0.3s;
- }
- 
- @media (max-width: 900px) {
-     .item {
-         width: calc(50% - 20px);
-     }
- }
- 
- @media (max-width: 600px) {
-     .item {
-         width: calc(100% - 20px);
-     }
- }
- 
+
+.item .comprar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7eff94;
+  background-image: linear-gradient(180deg, #7eff94 0%, #2eaa42 100%);
+  border-radius: 3px;
+  font-weight: bold;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.item .comprar:hover {
+  background-color: #ffffff;
+  background-image: linear-gradient(180deg, #fff 0%, #fff 100%);
+}
+
+.item .comprar a {
+  padding: 12px;
+  margin: 0 1px;
+  font-size: 13px;
+  color: #13501d;
+  text-decoration: none;
+}
+
+.item .comprar img {
+  width: 20px;
+  height: 20px;
+  box-shadow: none;
+}
+
+.item a {
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 13px;
+  color: #13501d;
+  font-weight: bold;
+  transition: ease 0.3s;
+}
+
+@media (max-width: 900px) {
+  .item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .item {
+    width: calc(100% - 20px);
+  }
+}

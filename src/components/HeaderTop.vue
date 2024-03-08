@@ -5,7 +5,7 @@
       <p>Floricultura Casa Das Flores</p>
     </div>
     <div class="desc-data animate__animated animate__fadeIn">
-      <p>Frete grátis para regiões próximas de Curitiba</p>
+      <p>Frete grátis para regiões próximas à Paranaguá</p>
       <button>Conferir agora</button>
     </div>
   </div>

@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import SideFooter from './components/SideFooter.vue'
+import Location from './components/Location.vue'
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import SideFooter from './components/SideFooter.vue'
     </div>
   </header>
   <RouterView />
+  <Location/>
   <SideFooter />
 </template>
 

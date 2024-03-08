@@ -9,7 +9,7 @@ const increaseCount = () => displayCount.value += 12;
 </script>
 
 <template>
-  <main class="animate__animated animate__fadeIn"></main>
+  <main class="animate__animated animate__fadeIn pelucias"></main>
   <div class="text-h1">
     <h1 class="animate__animated animate__fadeInDown">Nossas pelucias e cestas</h1>
   </div>
@@ -24,10 +24,13 @@ const increaseCount = () => displayCount.value += 12;
           </div>
         </template>
         <template v-else-if="index === displayCount">
-          <div class="loading">
-            <!-- <button @click="increaseCount">Ver mais</button> -->
-          </div>
+          <button @click="increaseCount" class="ver-mais">Ver mais</button>
         </template>
+        <!-- <template v-else-if="index === displayCount">
+          <div class="loading">
+            <button @click="increaseCount">Ver mais</button>
+          </div>
+        </template> -->
       </div>
     </div>
   </div>
