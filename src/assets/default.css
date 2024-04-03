@@ -71,7 +71,7 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 
 .before {
@@ -120,18 +120,18 @@ h1 {
   font-weight: bold;
   transition: ease 0.3s;
   cursor: pointer;
+  padding: 13px;
 }
 
 .item .comprar:hover {
-  background-color: #ffffff;
-  background-image: linear-gradient(180deg, #fff 0%, #fff 100%);
+  background-image: linear-gradient(180deg, #282828 0%, #676767 100%);
+  color: #fff;
 }
 
-.item .comprar a {
-  padding: 12px;
-  margin: 0 1px;
-  font-size: 13px;
-  color: #13501d;
+.item .comprar p {
+  margin: 0 4px;
+  font-size: 12px;
+
   text-decoration: none;
 }
 

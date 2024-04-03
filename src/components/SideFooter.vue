@@ -28,7 +28,7 @@ function checkStatus() {
     <div class="footer">
       <div>
         <img src="../assets/imgs/logo.png" alt="logo-site" width="100">
-        <p>48.088.293/0001-37</p>
+        <p>00.080.916-0001/07</p>
         <p>⚲ Paranaguá - Parana, Brasil</p>
         <p>{{ status }}</p>
       </div>

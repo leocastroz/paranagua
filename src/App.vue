@@ -20,15 +20,18 @@ import Location from './components/Location.vue'
     </div>
   </header>
   <RouterView />
-  <Location/>
+  <Location />
   <SideFooter />
 </template>
 
 <style scoped>
 nav {
-  padding: 8px 0;
   text-align: center;
   background-color: #affdbc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -53,5 +56,4 @@ nav a.router-link-exact-active {
   color: #ebffe7;
   background-color: #2eaa42;
 }
-
 </style>
