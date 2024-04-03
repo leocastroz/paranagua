@@ -1,19 +1,41 @@
+<script setup>
+import { ChatBubbleLeftRightIcon } from '../icons.js'
+</script>
+
 <template>
   <div class="top-bar">
     <div class="logo-title animate__animated animate__fadeIn">
       <img src="../assets/imgs/logo.png" alt="" width="60">
       <p>Floricultura Casa Das Flores</p>
     </div>
-    <div class="desc-data animate__animated animate__fadeIn">
-      <p>Frete grátis para regiões próximas à Paranaguá</p>
-      <button>Conferir agora</button>
-    </div>
+    <a href="https://api.whatsapp.com/send?phone=+5541984559417&text=Olá Casa das Flores Paranagua! Gostaria de comprar este item." target="_blank" class="gratis">
+      <ChatBubbleLeftRightIcon style="width: 14px;margin-right: 5px;" />
+      <p>Fale conosco</p>
+    </a>
   </div>
 </template>
 
 <style scoped>
+.gratis {
+  background-image: linear-gradient(180deg, #282828 0%, #676767 100%);
+  color: #fff;
+  box-shadow: 0 5px 5px 0 #23622d97;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-.logo-title, .desc-data {
+.gratis:hover {
+  background-image: linear-gradient(180deg, #ffffff 0%, #bababa 100%);
+  color: #282828;
+  background-color: #fff;
+}
+
+.logo-title,
+.desc-data {
   display: flex;
   align-items: center;
 }
@@ -24,6 +46,7 @@
   border-radius: 100%;
   background-color: #282828;
 }
+
 .logo-title p {
   font-size: 0.9rem;
   font-weight: 700;
@@ -57,10 +80,36 @@ button {
   transition: ease 0.3s;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #eefff1;
   color: #000;
   box-shadow: 0 5px 5px 0 #23622d;
 }
 
+/* @media (max-width: 900px) {
+  .desc-data {
+    display: none;
+    background: yellow;
+  }
+} */
+
+@media (max-width: 500px) {
+  .logo-title img {
+    display: none;
+  }
+
+  .logo-title p {
+    font-size: 0.8rem;
+    text-align: left;
+    width: 130px;
+  }
+}
+
+/* @media (min-width: 900px) {
+  .gratis {
+    display: none;
+    font-size: 0.8rem;
+  }
+} */
 </style>
